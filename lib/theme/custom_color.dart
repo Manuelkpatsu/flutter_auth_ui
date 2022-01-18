@@ -34,8 +34,9 @@ class CustomColor {
   );
 
   static const Color primaryColor = Color(0xffff1654);
-  static const Color greyButtonColor = Color(0xffd9dde2);
+  static const Color greyBorderColor = Color(0xffd9dde2);
   static const Color greyTextColor = Color(0xffabb4bd);
   static const Color blackTextColor = Color(0xff1d2029);
   static const Color darkBackgroundColor = Color(0xff0c0f18);
+  static const Color disabledButtonColor = Color(0xff979797);
 }

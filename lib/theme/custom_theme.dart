@@ -32,11 +32,18 @@ class CustomTheme {
         systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
       primarySwatch: CustomColor.white,
-      buttonTheme: ButtonThemeData(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-        buttonColor: CustomColor.primaryColor,
-        disabledColor: CustomColor.greyButtonColor,
-        height: 45,
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          primary: CustomColor.primaryColor,
+          elevation: 0,
+          onPrimary: Colors.white,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(4)),
+          ),
+          onSurface: CustomColor.disabledButtonColor,
+          minimumSize: const Size(double.infinity, 50),
+          
+        ),
       ),
     );
   }
@@ -69,11 +76,17 @@ class CustomTheme {
         systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       primarySwatch: CustomColor.black,
-      buttonTheme: ButtonThemeData(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-        buttonColor: CustomColor.primaryColor,
-        disabledColor: CustomColor.blackTextColor,
-        height: 45,
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          primary: CustomColor.primaryColor,
+          elevation: 0,
+          onPrimary: Colors.white,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(4)),
+          ),
+          onSurface: CustomColor.disabledButtonColor,
+          minimumSize: const Size(double.infinity, 50)
+        ),
       ),
     );
   }

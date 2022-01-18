@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth_ui/theme/custom_theme.dart';
+import 'package:flutter_auth_ui/ui/screens/login_screen.dart';
 import 'package:flutter_auth_ui/ui/screens/splash_screen.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.lightTheme,
       darkTheme: CustomTheme.darkTheme,
-      home: const SplashScreen(),
+      home: const LoginScreen(),
     );
   }
 }
