@@ -188,7 +188,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Text(
           'Forgot Password?',
           style: Theme.of(context).textTheme.bodyText2!.copyWith(
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: FontWeight.w400,
                 color: CustomColor.primaryColor,
               ),
@@ -210,7 +210,7 @@ class _LoginScreenState extends State<LoginScreen> {
       text: TextSpan(
         text: 'Don\'t have an account? ',
         style: Theme.of(context).textTheme.bodyText1!.copyWith(
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: FontWeight.normal,
             ),
         children: [
@@ -220,7 +220,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Text(
                 'Register Now',
                 style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                      fontSize: 12,
+                      fontSize: 14,
                       fontWeight: FontWeight.normal,
                       color: CustomColor.primaryColor,
                     ),

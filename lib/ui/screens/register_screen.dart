@@ -146,7 +146,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       text: TextSpan(
         text: 'By registering, you agree to ',
         style: Theme.of(context).textTheme.bodyText1!.copyWith(
-              fontSize: 12,
+              fontSize: 14,
             ),
         children: [
           TextSpan(
@@ -154,7 +154,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             recognizer: TapGestureRecognizer()..onTap = () {},
             style: Theme.of(context).textTheme.bodyText1!.copyWith(
                   color: CustomColor.primaryColor,
-                  fontSize: 12,
+                  fontSize: 14,
                 ),
           ),
           const TextSpan(
@@ -165,7 +165,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             recognizer: TapGestureRecognizer()..onTap = () {},
             style: Theme.of(context).textTheme.bodyText1!.copyWith(
                   color: CustomColor.primaryColor,
-                  fontSize: 12,
+                  fontSize: 14,
                 ),
           ),
           const TextSpan(
