@@ -1,11 +1,14 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth_ui/theme/custom_color.dart';
+import 'package:flutter_auth_ui/ui/screens/verification_screen.dart';
 import 'package:flutter_auth_ui/ui/widgets/password_input_field.dart';
 import 'package:flutter_auth_ui/ui/widgets/text_input_field.dart';
 import 'package:flutter_auth_ui/utils/validator.dart';
 
 class RegisterScreen extends StatefulWidget {
+  static const routeName = '/register';
+
   const RegisterScreen({Key? key}) : super(key: key);
 
   @override
@@ -135,7 +138,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   Widget registerButton() {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        if (_formKey.currentState!.validate()) {
+          Navigator.pushNamed(context, VerificationScreen.routeName);
+        }
+      },
       child: const Text('Register'),
     );
   }

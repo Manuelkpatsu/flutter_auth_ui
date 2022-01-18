@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth_ui/theme/custom_color.dart';
+import 'package:flutter_auth_ui/ui/screens/forgot_password_screen.dart';
+import 'package:flutter_auth_ui/ui/screens/home_screen.dart';
+import 'package:flutter_auth_ui/ui/screens/register_screen.dart';
 import 'package:flutter_auth_ui/ui/widgets/password_input_field.dart';
 import 'package:flutter_auth_ui/ui/widgets/text_input_field.dart';
 import 'package:flutter_auth_ui/utils/validator.dart';
 
 class LoginScreen extends StatefulWidget {
+  static const routeName = '/login';
+
   const LoginScreen({Key? key}) : super(key: key);
 
   @override
@@ -184,7 +189,9 @@ class _LoginScreenState extends State<LoginScreen> {
     return Align(
       alignment: Alignment.centerRight,
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, ForgotPasswordScreen.routeName);
+        },
         child: Text(
           'Forgot Password?',
           style: Theme.of(context).textTheme.bodyText2!.copyWith(
@@ -199,7 +206,15 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget loginButton() {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        if (_formKey.currentState!.validate()) {
+          Navigator.pushNamedAndRemoveUntil(
+            context,
+            HomeScreen.routeName,
+            (route) => false,
+          );
+        }
+      },
       child: const Text('Login'),
     );
   }
@@ -216,7 +231,9 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           WidgetSpan(
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, RegisterScreen.routeName);
+              },
               child: Text(
                 'Register Now',
                 style: Theme.of(context).textTheme.bodyText1!.copyWith(

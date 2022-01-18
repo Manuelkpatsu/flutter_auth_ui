@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth_ui/ui/screens/check_email_screen.dart';
 import 'package:flutter_auth_ui/ui/widgets/password_input_field.dart';
 import 'package:flutter_auth_ui/utils/validator.dart';
 
 class ResetPasswordScreen extends StatefulWidget {
+  static const routeName = '/reset_password';
+
   const ResetPasswordScreen({Key? key}) : super(key: key);
 
   @override
@@ -28,7 +31,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Form(
           key: _formKey,
@@ -105,7 +108,11 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
 
   Widget updatePasswordButton() {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        if (_formKey.currentState!.validate()) {
+          Navigator.pushNamed(context, CheckEmailScreen.routeName);
+        }
+      },
       child: const Text('Update'),
     );
   }

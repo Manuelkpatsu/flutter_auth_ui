@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth_ui/ui/screens/reset_password_screen.dart';
 import 'package:flutter_auth_ui/ui/widgets/text_input_field.dart';
 import 'package:flutter_auth_ui/utils/validator.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
+  static const routeName = '/forgot_password';
+
   const ForgotPasswordScreen({Key? key}) : super(key: key);
 
   @override
@@ -23,7 +26,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Form(
           key: _formKey,
@@ -75,7 +78,11 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
   Widget recoverPasswordButton() {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        if (_formKey.currentState!.validate()) {
+          Navigator.pushNamed(context, ResetPasswordScreen.routeName);
+        }
+      },
       child: const Text('Recover Password'),
     );
   }

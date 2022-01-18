@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth_ui/ui/screens/login_screen.dart';
 
 class CheckEmailScreen extends StatelessWidget {
+  static const routeName = '/check_email';
+
   const CheckEmailScreen({ Key? key }) : super(key: key);
 
   @override
@@ -22,7 +25,7 @@ class CheckEmailScreen extends StatelessWidget {
               const SizedBox(height: 10),
               info(context),
               const SizedBox(height: 40),
-              loginButton(),
+              loginButton(context),
               const SizedBox(height: 30),
             ],
           ),
@@ -58,9 +61,15 @@ class CheckEmailScreen extends StatelessWidget {
     );
   }
 
-  Widget loginButton() {
+  Widget loginButton(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.pushNamedAndRemoveUntil(
+          context,
+          LoginScreen.routeName,
+          (route) => false,
+        );
+      },
       child: const Text('Go to email'),
     );
   }

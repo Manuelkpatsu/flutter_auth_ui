@@ -1,10 +1,13 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth_ui/theme/custom_color.dart';
+import 'package:flutter_auth_ui/ui/screens/home_screen.dart';
 import 'package:flutter_auth_ui/utils/validator.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class VerificationScreen extends StatefulWidget {
+  static const routeName = '/verification';
+
   const VerificationScreen({Key? key}) : super(key: key);
 
   @override
@@ -13,6 +16,7 @@ class VerificationScreen extends StatefulWidget {
 
 class _VerificationScreenState extends State<VerificationScreen> {
   final TextEditingController codeController = TextEditingController();
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -60,36 +64,48 @@ class _VerificationScreenState extends State<VerificationScreen> {
   }
 
   Widget pinCodeTextField() {
-    return PinCodeTextField(
-      appContext: context,
-      controller: codeController,
-      keyboardType: TextInputType.number,
-      textInputAction: TextInputAction.done,
-      length: 4,
-      cursorColor: CustomColor.primaryColor,
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      pinTheme: PinTheme(
-        shape: PinCodeFieldShape.underline,
-        inactiveColor: CustomColor.greyTextColor,
-        activeColor: CustomColor.primaryColor,
-        selectedColor: CustomColor.primaryColor,
+    return Form(
+      key: _formKey,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
+      child: PinCodeTextField(
+        appContext: context,
+        controller: codeController,
+        keyboardType: TextInputType.number,
+        textInputAction: TextInputAction.done,
+        length: 4,
+        cursorColor: CustomColor.primaryColor,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        pinTheme: PinTheme(
+          shape: PinCodeFieldShape.underline,
+          inactiveColor: CustomColor.greyTextColor,
+          activeColor: CustomColor.primaryColor,
+          selectedColor: CustomColor.primaryColor,
+        ),
+        textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(
+              fontWeight: FontWeight.normal,
+              fontSize: 20,
+            ),
+        onChanged: (value) {
+          setState(() {
+            codeController.text = value;
+          });
+        },
+        validator: Validator.code,
       ),
-      textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(
-            fontWeight: FontWeight.normal,
-            fontSize: 20,
-          ),
-      onChanged: (value) {
-        setState(() {
-          codeController.text = value;
-        });
-      },
-      validator: Validator.code,
     );
   }
 
   Widget verifyButton() {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        if (_formKey.currentState!.validate()) {
+          Navigator.pushNamedAndRemoveUntil(
+            context,
+            HomeScreen.routeName,
+            (route) => false,
+          );
+        }
+      },
       child: const Text('Verify'),
     );
   }
