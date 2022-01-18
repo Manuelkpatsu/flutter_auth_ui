@@ -66,7 +66,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   Widget emailTextField() {
     return TextInputField(
       controller: emailController,
-      inputAction: TextInputAction.next,
+      inputAction: TextInputAction.done,
       inputType: TextInputType.emailAddress,
       validator: Validator.email,
       label: 'Email',

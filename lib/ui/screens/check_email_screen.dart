@@ -61,7 +61,7 @@ class CheckEmailScreen extends StatelessWidget {
   Widget loginButton() {
     return ElevatedButton(
       onPressed: () {},
-      child: const Text('Login'),
+      child: const Text('Go to email'),
     );
   }
 }
