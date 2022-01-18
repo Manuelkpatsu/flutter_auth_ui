@@ -1,16 +1,29 @@
-# flutter_auth_ui
+# Flutter Authentication App UI
 
-A new Flutter project.
+A [@nuel_nartey](https://twitter.com/nuel_nartey) Flutter Showcase project.
 
-## Getting Started
+## UI Store Design created by [Abhinav Agrawal](https://www.uistore.design/items/login-screens-ui-kit-freebie)
 
-This project is a starting point for a Flutter application.
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-1.jpeg?raw=true" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-2.jpeg?raw=true" />
+    </td>
+  </tr>
+</table>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-1.jpeg?raw=true" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-2.jpeg?raw=true" />
+    </td>
+  </tr>
+</table>
