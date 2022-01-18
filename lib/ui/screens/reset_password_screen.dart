@@ -87,7 +87,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
       inputAction: TextInputAction.done,
       validator: (String? value) {
         if (value!.isEmpty) {
-          return 'Please re-enter password';
+          return 'Please confirm password';
         }
 
         if (newPasswordController.text != confirmPasswordController.text) {
