@@ -7,10 +7,10 @@ A [@nuel_nartey](https://twitter.com/nuel_nartey) Flutter Showcase project.
 <table>
   <tr>
     <td>
-      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-1.jpeg?raw=true" />
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-1.jpeg" />
     </td>
     <td>
-      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-2.jpeg?raw=true" />
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-2.jpeg" />
     </td>
   </tr>
 </table>
@@ -20,10 +20,10 @@ A [@nuel_nartey](https://twitter.com/nuel_nartey) Flutter Showcase project.
 <table>
   <tr>
     <td>
-      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-1.jpeg?raw=true" />
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-1.jpeg" />
     </td>
     <td>
-      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-2.jpeg?raw=true" />
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/Login-Screens-UI-Kit-Freebie-2.jpeg" />
     </td>
   </tr>
 </table>
