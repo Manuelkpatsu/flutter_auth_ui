@@ -22,6 +22,7 @@ class TextInputField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      cursorColor: CustomColor.primaryColor,
       controller: controller,
       decoration: InputDecoration(
         border: const UnderlineInputBorder(

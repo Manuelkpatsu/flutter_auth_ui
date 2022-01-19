@@ -26,6 +26,7 @@ class PasswordInputField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      cursorColor: CustomColor.primaryColor,
       controller: controller,
       decoration: InputDecoration(
         labelText: label,
