@@ -17,25 +17,23 @@ A [@nuel_nartey](https://twitter.com/nuel_nartey) Flutter Showcase project.
 
 
 ## Screenshots
+Light Theme
 <table>
   <tr>
     <td>
       <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/splash-screen.png" />
     </td>
     <td>
-      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/register-screen.png" />
-    </td>
-    <td>
       <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/login-screen.png" />
-    </td>
-    <td>
-      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/home-screen.png" />
     </td>
     <td>
       <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/register-screen.png" />
     </td>
     <td>
       <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/verification-screen.png" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/home-screen.png" />
     </td>
     <td>
       <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/forgot-password-screen.png" />
@@ -47,9 +45,34 @@ A [@nuel_nartey](https://twitter.com/nuel_nartey) Flutter Showcase project.
       <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/check-email-screen.png" />
     </td>
   </tr>
+</table>
+
+Dark Theme
+<table>
   <tr>
     <td>
-      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/check-email-screen.png" />
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/dark-splash-screen.png" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/dark-login-screen.png" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/dark-register-screen.png" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/dark-verification-screen.png" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/dark-home-screen.png" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/dark-forgot-password.png" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/dark-reset-password.png" />
+    </td>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/dark-check-email.png" />
     </td>
   </tr>
 </table>
