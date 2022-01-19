@@ -47,4 +47,9 @@ A [@nuel_nartey](https://twitter.com/nuel_nartey) Flutter Showcase project.
       <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/check-email-screen.png" />
     </td>
   </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/check-email-screen.png" />
+    </td>
+  </tr>
 </table>
