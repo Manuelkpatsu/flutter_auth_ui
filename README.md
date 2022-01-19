@@ -20,7 +20,7 @@ A [@nuel_nartey](https://twitter.com/nuel_nartey) Flutter Showcase project.
 <table>
   <tr>
     <td>
-      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/splash-screen-png" />
+      <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/splash-screen.png" />
     </td>
     <td>
       <img src="https://github.com/Manuelkpatsu/flutter_auth_ui/blob/main/screenshots/register-screen.png" />
